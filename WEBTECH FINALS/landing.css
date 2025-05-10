@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+
+  .hero {
+    background: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  .products {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .product-card {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .product-card button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background: #218838;
+  }
+  
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #333;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .sidebar a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .open-btn {
+    font-size: 24px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    border-radius: 4px;
+  }
+  
+  .open-btn:hover {
+    background-color: #f5f5f5;
+  }
+
+  /* For screens up to 1024px wide (e.g., tablets in landscape orientation) */
+@media screen and (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* For screens up to 768px wide (e.g., tablets in portrait orientation) */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+  }
+
+  .product-card p {
+    font-size: 16px;
+  }
+
+  .product-card button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  .open-btn {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .sidebar a {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  .sidebar .close-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+  }
+}
+
+/* For screens up to 480px wide (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+  }
+
+  .product-card button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .open-btn {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+
+  .sidebar a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .sidebar .close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+  }
+}

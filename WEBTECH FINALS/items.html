@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Page</title>
+  <link rel="stylesheet" href="items.css" />
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        <a href="landing.html">Home</a>
+        <a href="items.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="size.html">Size Chart</a>
+        <a href="faq.html">FAQs</a>
+    </div>
+  
+    <button id="openBtn" class="open-btn" onclick="toggleSidebar()">☰</button>
+
+  <h1>Our Products</h1>
+
+  <section class="category">
+    <h2>Jackets</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Jacket 1" />
+        <h3>Jacket 1</h3>
+        <p class="price">$49.99</p>
+        <p>Warm and stylish jacket.</p>
+        <button class="add-to-cart" data-name="Jacket 1" data-price="49.99">Add to Cart</button>
+      </div>
+      <!-- Add more jacket products as needed -->
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Shirts</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Shirt 1" />
+        <h3>Shirt 1</h3>
+        <p class="price">$29.99</p>
+        <p>Comfortable cotton shirt.</p>
+        <button class="add-to-cart" data-name="Shirt 1" data-price="29.99">Add to Cart</button>
+      </div>
+      <!-- Add more shirt products as needed -->
+    </div>
+  </section>
+
+  <!-- Add more categories as needed -->
+
+  <a href="cart.html">Go to Cart</a>
+
+  <script src="items.java"></script>
+  <script src="sidebar.java"></script>
+</body>
+</html>

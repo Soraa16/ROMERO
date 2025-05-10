@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+        <a href="landing.html">Home</a>
+        <a href="items.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="size.html">Size Chart</a>
+        <a href="faq.html">FAQs</a>
+    </div>
+  
+    <button id="openBtn" class="open-btn" onclick="toggleSidebar()">☰</button>
+
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-info">
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/shelovesdwaine/" target="_blank">@Dwaine Romero</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/dwainey_/" target="_blank">@dwainey_</a></p>
+            <p><strong>Phone:</strong> 09397766072</p>
+            <p><strong>Location:</strong> SA PUSO NI ELEYN</p>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="sidebar.java"></script>
+</body>
+</html>
